@@ -5,19 +5,12 @@
 	</div>
 </template>
 
-<script>
+<script setup>
 import useAutoCount from './composables/useAutoCount'
 
-export default {
-  name: 'App',
-  setup() {
     const { count } = useAutoCount(0)
 
     function reset() {
-      count.value = 0
+      count.value = 20
     }
-
-    return { count, reset }
-  }
-}
 </script>
